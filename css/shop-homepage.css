@@ -1,0 +1,27 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template/shop-homepage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+
+.book-list{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.list-group-item{
+   width:45%;
+   margin:15px;
+
+
+}
+
+li img{
+   width:220px;
+   height:300px;
+}
+
