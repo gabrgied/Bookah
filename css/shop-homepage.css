@@ -28,3 +28,21 @@ li img{
 p{
   color:black;
 }
+
+.book-card img{
+  width:150px;
+  height:200px;
+}
+
+.book-card{
+  display:flex;
+  flex-direction:column;
+
+}
+
+#books{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  flex-wrap:wrap;
+}
+

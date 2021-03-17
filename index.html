@@ -88,92 +88,188 @@
         
         </header>
 
-        <div class="row">
-
-          <input type="text" id="filterInput" placeholder="Įveskite knygos pavadinimą">
-
-			<div class="book-list">
-
-			
-				<li class="list-group-item">
-				<img src="img/book-cover.jpg">
-				<a href="#">Mein Kampf</a>
-				</li>
-       
-				<li class="list-group-item">
-				<img src="img/charged.jpg">
-				<a href="#">Charged</a>
-				</li>
-				<li class="list-group-item">
-				<img src="img/da-vinci.jpg">
-				<a href="#">Da-Vinci</a>
-				</li>
-				<li class="list-group-item">
-					<img src="img/ginger.jpg">
-				<a href="#">GingerBread</a>
-				</li>
-
-				<li class="list-group-item">
-					<img src="img/gone-wild.jpg">
-				<a href="#">Gone wild</a>
-				</li>
-				<li class="list-group-item">
-					<img src="img/harry-potter.jpg">
-				<a href="#">Harry Potter</a>
-				</li>
-				<li class="list-group-item">
-					<img src="img/impro.jpg">
-				<a href="#">Impro</a>
-				</li>
-				<li class="list-group-item">
-					<img src="img/katinas.jpg">
-				<a href="#">Keliaujančio katino kronikos</a>
-				</li>
-
-	
-		
-				<li class="list-group-item">
-					<img src="img/lion.jpg">
-				<a href="#">The Lion</a>
-				</li>
-				<li class="list-group-item">
-					<img src="img/lolita.jpg">
-				<a href="#">Lolita</a>
-				</li>
-				<li class="list-group-item">
-					<img src="img/mazas-gyvenimas.jpg">
-				<a href="#">Mazas-Gyvenimas</a>
-				</li>
-				<li class="list-group-item">
-					<img src="img/she.jpg">
-				<a href="#">She</a>
-				</li>
-
-
-				<li class="list-group-item">
-					<img src="img/the-art-of-war.jpg">
-				<a href="#">The art of war</a>
-				</li>
-				<li class="list-group-item">
-					<img src="img/kitchen.jpg">
-				<a href="#">Kitchen</a>
-				</li>
-				<li class="list-group-item">
-					<img src="img/gone-wild.jpg">
-				<a href="#">Gone Wild</a>
-				</li>
-				<li class="list-group-item">
-					<img src="img/god-father.jpg">
-				<a href="#">Godfather</a>
-				</li>
-
-	
-
-		</div>
-          
+        <div section="search-box">
+          <form action="" onsubmit=return false>
+            <input type="text" id="search" placeholder="Search Product">
+           
+          </form>
         </div>
-        <!-- /.row -->
+        <div class="filler-box">
+            <a href="#" class="btn active" data-filter="all">Visi</a>
+            <a href="#" class="btn active" data-filter="grozines-knygos">Grozines knygos</a>
+            <a href="#" class="btn active" data-filter="klasika">Klasika</a>
+            <a href="#" class="btn active" data-filter="distopiniai-romanai">Distopiniai romanai</a>
+            <a href="#" class="btn active" data-filter="iliustruotosios istorijos-vaikams">Iliustruotosios istorijos vaikams</a>
+            <a href="#" class="btn active" data-filter="siaubo-ir-vaiduoklių romanai">Siaubo ir vaiduoklių romanai</a>
+            <a href="#" class="btn active" data-filter="poezija-esė">Poezija, esė</a>
+            <a href="#" class="btn active" data-filter="meilės-romanai">Meilės romanai</a>
+            <a href="#" class="btn active" data-filter="fantastika">Fantastika</a>
+            <a href="#" class="btn active" data-filter="nuotykių-knygos">Nuotykių knygos</a>
+            <a href="#" class="btn active" data-filter="knygos-mažiausiems">Knygos mažiausiems</a>
+        </div>
+  
+          <section id="books">
+              <div class="book-card siaubo-ir-vaiduoklių romanai">
+                <img src="img/1.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card klasika">
+                <img src="img/2.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card distopiniai-romanai">
+                <img src="img/3.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card knygos-mažiausiems">
+                <img src="img/4.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card fantastika">
+                <img src="img/5.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card poezija-esė">
+                <img src="img/6.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card fantastika">
+                <img src="img/7.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card poezija-esė">
+                <img src="img/8.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card fantastika">
+                <img src="img/9.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card fantastika">
+                <img src="img/10.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card grozines-knygos">
+                <img src="img/11.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card siaubo-ir-vaiduoklių romanai">
+                <img src="img/12.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card grozines-knygos">
+                <img src="img/13.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card siaubo ir vaiduoklių-romanai">
+                <img src="img/14.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card grozines-knygos">
+                <img src="img/15.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+              <div class="book-card nuotykių-knygos">
+                <img src="img/16.jpg">
+                <div class="details">
+                  <h2>Everybody Poops</h2>
+                  <p>Bukle</p>
+                  <p>Autorius</p>
+                  <p>Kategorija</p>
+                  <a href="#">Mainytis</a>
+                </div>
+              </div>
+          </div>
 
+        <!-- /.row -->
       </div>
       <!-- /.col-lg-9 -->
 
@@ -191,35 +287,9 @@
     <!-- /.container -->
   </footer>
 
-  <script>
-    //Get input element
-    let filterInput = document.getElementById('filterInput');
-    //EventListener
-    filterInput.addEventListener('keyup', filterNames);
-    
-    function filterNames(){
-      let filterValue = document.getElementById('filterInput').value.toUpperCase();
-      //Get names ul
-      let ul = document.getElementById('names');
-      //Get items
-      let li = ul.querySelectorAll('li.list-group-item');
-    
-      //Loop through collection-item list
-      for(let i = 0;i < li.length;i++){
-        let a = li[i].getElementsByTagName('a')[0];
-        // If matched
-        if(a.innerHTML.toUpperCase().indexOf(filterValue) > -1){
-          li[i].style.display = '';
-        } else {
-            li[i].style.display = 'none';
-        }
-    
-      }
-    }
-    
-    </script>
 
   <!-- Bootstrap core JavaScript -->
+  <script src="javascript/main.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
