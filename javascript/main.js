@@ -20,7 +20,7 @@ for(i= 0; i < btns.length; i++){
 }
 
 
-//Filtras
+//Filtras (blogas)
 const search = document.getElementById("search");
 
 search.addEventListener("keyup", (e) => {
