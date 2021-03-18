@@ -1,0 +1,112 @@
+body {
+    padding-top: 56px;
+  }
+
+  html{
+      scroll-behavior: smooth;
+  }
+  
+/*spalvos*/
+:root {
+    --primary: #5580E9;
+    --secondary: #84CEEB;
+    --light:#5AB8EB;
+    --light-grey:#C1C8E4;
+    --white:white;
+  }
+
+  /*Animacija*/
+@-webkit-keyframes arrowanimationdown {
+    100% { -webkit-transform: translateY(0.6em)}
+    30% { -webkit-transform: translateY(0.0em)}
+  }
+
+  
+  .bi-arrow-down{
+    margin:20px;
+    animation: arrowanimationdown 1.2s infinite alternate ease-in-out;
+  }
+
+  .back-to-top{
+    position:fixed;
+    bottom:0px;
+    left:0px;
+    a{
+      .fas{
+        font-size:1.5rem;
+      }
+    }
+  }
+
+
+/*Paieska*/
+.search-bar{
+ margin:1rem 0 2rem 0;
+ display:flex;
+
+ .dropdown{
+     border:none;
+     border-radius:5px;
+     padding:0px 10px;
+ }
+ .search-bar_dropdown{
+   button{
+    
+   }
+ }
+ 
+}
+
+ 
+  #books{
+    display:grid;
+    gap:20px;
+    grid-template-columns:1fr 1fr;
+    flex-wrap:wrap;
+    margin-right:100px;
+    .book-card{
+        display:flex;
+        
+        border:1px solid var(--light-grey);
+        border-radius:0.5rem;
+        padding:30px 20px;
+        .details{
+            line-height:17px;
+            a{
+                text-decoration:none;
+                color:var(--light);
+            }
+        }
+        
+        img{
+            display:flex;
+            justify-content:center;
+            width:200px;
+            height:250px;
+            padding:1rem;
+          }
+      }
+  }
+  
+
+  @media only screen and (max-width: 1050px) {
+    #books{
+        display:grid;
+        grid-template-columns:1fr;
+ 
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
+    #books{
+        display:grid;
+        grid-template-columns:1fr;
+ 
+    }
+    .book-card{
+        flex-direction:column;
+    }
+    .search-bar{
+        
+    }
+  }
