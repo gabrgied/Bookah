@@ -1033,7 +1033,7 @@
         Util.reflow(nextElement);
         $__default['default'](activeElement).addClass(directionalClassName);
         $__default['default'](nextElement).addClass(directionalClassName);
-        var nextElementInterval = parseInt(nextElement.getAttribute('data-interval'), 10);
+        var nextElementInterval = parseInt(nextElement.getAttribute('data-interval'), 4);
 
         if (nextElementInterval) {
           this._config.defaultInterval = this._config.defaultInterval || this._config.interval;
