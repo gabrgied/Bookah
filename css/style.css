@@ -32,6 +32,11 @@ html {
           animation: arrowanimationdown 1.2s infinite alternate ease-in-out;
 }
 
+.carousel-item img{
+  width:100%;
+  height:600px;
+}
+
 .back-to-top {
   position: fixed;
   bottom: 0px;
@@ -54,6 +59,10 @@ html {
   border: none;
   border-radius: 5px;
   padding: 0px 10px;
+}
+
+#dropdownMenuButton{
+  height:40px;
 }
 /*
 #books {
@@ -97,13 +106,18 @@ html {
   padding: 1rem;
 } */
 
+.links{
+  text-align:center;
+}
 
-.button {
+.link {
   border: 2px solid black;
   height: 40px;
-  margin-top: 10px;
-  display: flex;
+  margin-top:10px;
+  text-align:center;
   font-weight: bold;
+  width:100px;
+ 
 }
 
 .book-list{
@@ -119,6 +133,19 @@ html {
   height: auto;
   width: 60%;
   margin-left: calc((100% - 60%)/2);
+  text-align:left;
+}
+
+.details img{
+  margin-left:50px;
+}
+
+.details a{
+  text-align:center;
+}
+
+.showresult{
+  display:none;
 }
 
 h2 {
@@ -133,18 +160,19 @@ h2 {
    margin:15px;
 }
 
-li img{
-   width:220px;
-   height:300px;
-}
+
 
 .book-card img{
   /* margin: 0 auto; */
-  width:auto;
-  height:20vw;
+  width:70%;
+  height:70%;
   -webkit-box-shadow: 9px 3px 19px -8px rgba(0,0,0,0.47);
   -moz-box-shadow: 9px 3px 19px -8px rgba(0,0,0,0.47);
   box-shadow: 9px 3px 19px -8px rgba(0,0,0,0.47);
+}
+
+#search-two{
+  display:none;
 }
 
 .book-card {
@@ -159,12 +187,10 @@ li img{
 
 #books{
   display:grid;
-  grid-gap: 20px;
-  grid-template-columns: auto auto;
+  gap:20px;
+  grid-template-columns:1fr 1fr;
   flex-wrap:wrap;
-  margin-top: 20px;
-  border-top: 1px solid silver;
-  padding-top: 20px;
+
 }
 
 .collapsible {
@@ -174,9 +200,11 @@ li img{
   padding: 8px;
   width: 100%;
   border: none;
-  text-align: left;
+
   outline: none;
   font-size: 15px;
+  text-align:center;
+  transition: 0.3s;
 }
 
 .press, .collapsible:hover {
@@ -196,22 +224,14 @@ li img{
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 @media only screen and (max-width: 520px) {
-  #books {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .book-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .carousel-item img{
+    width:100%;
+    height:300px;
   }
 }
 /*# sourceMappingURL=style.css.map */

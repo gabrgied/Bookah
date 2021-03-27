@@ -1,7 +1,6 @@
- (function () {
+ (function() {
      emailjs.init('user_H2qPQ4kLOaXHKL5q6lamG');
  })();
-
 
  window.onload = function () {
      document.getElementById('contact-form').addEventListener('submit', function (event) {
